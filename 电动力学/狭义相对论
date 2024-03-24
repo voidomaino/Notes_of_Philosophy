@@ -1,0 +1,89 @@
+狭义相对论
+相对论的提出
+电动力学的参考系问题
+
+（1）经典时空观下机械波的传播
+
+image
+
+考察如图所示的机械波。设绳子质量线密度为 $M$，张力为 $W$。
+
+根据几何关系及近似条件，得到 $$ \sin(\theta_1) \approx \tan(\theta_1) = \pqty{\pdv{y}{x}}_{x_0-\delta/2} $$ 对选取的绳元，根据牛顿第二定律，得到 $$ M \var{x} \pqty{\dv[2]{y}{t}}_{x_0} = W[\sin{\theta_2} - \sin{\theta_1}] $$ 得到波动方程 $$ W \dv[2]{y}{x} - M \dv[2]{y}{t} = 0 $$ 根据数理方程的相关知识，可以得出波速 $$ c = \sqrt{\frac{W}{M}} $$ （2）电磁波的传播速度
+
+根据 Maxwell 方程组 $$ \begin{align} \nabla \times \mathbf{E} &= - \frac{\partial \mathbf{B}}{\partial t} \tag{1} \ \nabla \times \mathbf{H} &= \frac{\partial \mathbf{D}}{\partial t} + \mathbf{J}_0 \ \nabla \cdot \mathbf{D} &= \rho_0 \ \nabla \cdot \mathbf{B} &= 0 \end{align} $$ 结合介质的物质方程 $$ \begin{align} \mathbf{D} = \varepsilon_r\varepsilon_0 \mathbf{E} \ \mathbf{B} = \mu_r\mu_0 \mathbf{H} \ \mathbf{J}_0 = \sigma \mathbf{E} \end{align} $$
+
+考虑无穷远处的自由空间（没有自由电荷和传导电流）中传播的电磁波 $$ \begin{align} \rho_0 = 0\ j_0 = 0 \end{align} $$ 对 $(1)$ 求旋，并代入矢量公式 $\nabla \times (\nabla \times \mathbf{E}) = \nabla(\nabla \cdot \mathbf{E}) - \nabla^2 \mathbf{E}$ ，则可得到关于电磁波传播的波动方程 $$ \laplacian{\vb{E}} - \frac{1}{\varepsilon_r\varepsilon_0\mu_r\mu_0} \pdv[2]{\vb{E}}{t} = 0 $$ 同理， $$ \laplacian{\vb{B}} - \frac{1}{\varepsilon_r\varepsilon_0\mu_r\mu_0} \pdv[2]{\vb{B}}{t} = 0 $$ 最后真空中的电磁波速度 $$ c = \frac{1}{\sqrt{\mu_0 \varepsilon_0}} $$ 牛顿时空观认为：真空中电磁波的传播速度只有在某个特殊的参考系 aether 才等于 c。 若能够测定各个方向上光速的差异，就可以确定地球相对于 aether 的运动。
+狭义相对论的实验基础
+
+（1）迈克尔逊干涉仪
+
+这部分在光学应该得到了详细的阐述。
+
+（2）以太假设下的理论结果
+
+地球绕太阳公转的速率约为 $30 km/s$，因此，地球相对于 aether 参考系的运动速度至少应与此具有同一数量级， $$ \frac{v}{c} \sim 10^{-4} $$
+
+用经典速度合成法则计算 Michelson-Morley 实验中电磁波沿两条光路的传播时间。如图示，
+
+image
+
+$v$ 为观测者相对于 aether 的运动速度； $u$ 为观测者参考系所测得的光速，设其与牵连速度 $v$ 之间的夹角为 $\theta$； $c$ 是 aether 参考系中的光速。
+
+image
+
+光程差为 $$ t_1 = \frac{l}{c-v} + \frac{l}{c+v}\ t_2 = \frac{2l}{\sqrt{c^2 -v^2}}\ c(t_1 -t_2 ) = l\frac{v^2}{c^2} $$ 仪器旋转 $90^\circ$ 光线互换，条纹移动个数 $$ \Delta N = \frac{2c(t_1-t_2)}{\lambda} = \frac{2c}{\lambda} \pqty{\frac{v}{c}}^2 $$ （3）Michelson-Morley 实验的结果
+
+$\Delta N$ 几乎没有变化。
+狭义相对论的基本原理
+间隔不变性
+
+Einstein 提出了两条相对论的基本假设：
+
+    相对性原理：所有惯性系都是等价的，物理学规律对于所有惯性系都可以表为相同形式。
+    光速不变原理：真空中的光速相对于任何惯性系均为 $c$, 光速与光源的运动无关。
+
+所有最基本的时空概念，如同时性、距离、时间、速度等概念都需要在光速不变性的假设之上重新讨论。
+
+牛顿时空观的基本特征是时间与空间的分离。时间在宇宙中均匀流逝着，而空间则好像是一个容器，二者之间没有联系，也不与物质的运动发生关系。
+
+与牛顿时空观类似，相对论的时空观也集中反映在从一个惯性参考系到另一个惯性参考系的时空坐标变换式里。
+
+事件：物质运动可以看作一系列事件的发展过程。事件可以有各种不同的具体内容，但是它们总是在一定地点于一定时刻发生的。
+
+狭义相对论假定可以用四个 Cartesian 坐标 $(t,x^1,x^2,x^3)$ 表示一个事件。一个事件 $P$ 在惯性系 $Σ$ 上用 $x_P = (x_P^\mu )$ 表达，但在另一惯性系 $Σ'$ 中就用 ${x'}_P^\mu$ 表达。
+
+狭义相对论默认的物理时空是不存在引力的四维闵氏 Minkowski 平坦空间。所以，在狭义相对论理论中，
+
+    时间是均匀的。
+    空间既是均匀的，也是各向同性的。
+
+时空的均匀性意味着同一时空点在不同坐标系的两组笛卡尔坐标之间的联系只能是线性变换。
+
+作业1：证明这一点。
+
+设两事件 $P$ 与 $Q$ 在惯性系 $Σ$ 中的笛卡尔坐标分别为 $x_P^\mu$ 和 $x_Q^\mu$， 则事件的间隔定义为： $$ \pqty{x_P - x_Q}^2 \equiv - c^2 \pqty{t_P-t_Q}^2 + (x_P^1 - x_Q^1)^2 + (x_P^2 - x_Q^2)^2 + (x_P^3 - x_Q^3)^2 $$ 引入闵氏空间度规张量 $\eta$ 的 Cartesian 分量 $\eta_{\mu\nu}$ 来表述事件的间隔： $$ \eta_{\mu\nu} = \mqty(\dmat{-1,1,1,1}) $$ 事件的间隔从此表述为： $$ (x_P - x_Q)^2 = \eta_{\mu\nu} (x_P^\mu - x_Q^\mu)(x_P^\nu - x_Q^\nu) $$ 不同参考系下的坐标变换是线性的，不同参考系是等价的，那么不同参考系描述下事件的间隔应该相等，即间隔不变性 $$ (x_P - x_Q)^2 = (x’_P - x’_Q)^2 $$ 闵氏空间中两个不同坐标系间的 Cartesian 坐标的线性变换 $$ x'^\mu = \Lambda^\mu_\nu x^\nu + a^\mu $$ 如果满足事件的间隔不变性，则称其为 Poincare 变换，或非齐次的 Lorentz 变换。
+
+当 $a^\mu=0$ 则称其为 Lorentz 变换。 根据间隔不变性，Lorentz 变换矩阵 $\Lambda^\mu_\nu$ 具有性质： $$ \Lambda^T \eta \Lambda \eta^{-1} = I $$
+Lorentz-transformation
+
+考虑 $P$、$Q$ 两个事件：$Q$ 在惯性系 $\Sigma$ 中的笛卡尔坐标为 $(0,0,0,0)$，$P$ 在 $\Sigma$ 中的笛卡尔坐标为 $(ct,x_1,x_2,x_3)$。如此，$\Sigma$ 系中二事件之间的间隔是： $$ s^2 = -(ct)^2 + {x_1}^2 +{x_2}^2 +{x_3}^2 $$ 现考虑此二事件在另一惯性系 $\Sigma'$ 中的间隔。设 $\Sigma'$ 相对于 $\Sigma$ 的运动速度为 $v$，且在初始时刻 $(t= t'= 0)$ 二惯性系重合。这样，二事件在 $\Sigma'$ 系中的笛卡尔坐标分别为 $(0,0,0,0)$ 和 $(ct',{x_1}',{x_2}',{x_3}')$， 相应的间隔是： $$ {s'}^2 = -(ct')^2 + {x_1}'^2 +{x_2}'^2 +{x_3}'^2 $$ 像同一时空点在两个惯性参考系之间的坐标变换称为洛伦兹推动变换。我们猜测两坐标系间满足的洛伦兹变换形式为 $$ ct' = \Lambda_{00}ct + \Lambda_{01}x_1\ {x_1}' = \Lambda_{10}ct + \Lambda_{11}x_1\ {x_2}' = x_2\ {x_3}' = x_3 $$ 代入间隔不变性 $$ {\Lambda_{00}}^2 - {\Lambda_{10}}^2 = 1\ {\Lambda_{11}}^2 - {\Lambda_{01}}^2 = 1\ {\Lambda_{00}}{\Lambda_{01}} - {\Lambda_{10}}{\Lambda_{11}} = 0 $$ 又代入 $\Sigma'$ 原点的洛伦兹变换 $$ 0 = \Lambda_{10}ct + \Lambda_{11}vt $$ 从而 $$ \Lambda_{00} = \Lambda_{11} = \gamma\ \Lambda_{10} = \Lambda_{01} = - \beta\gamma $$ 其中 $\beta = \frac{v}{c}$、$\gamma = \frac{1}{\sqrt{1 - \beta^2}}$
+
+此时的洛伦兹变换矩阵 $\Lambda$，又称 Lorentz 推动矩阵 $$ \Lambda = \mqty(\dmat{\gamma&-\gamma\beta \ -\gamma\beta&\gamma,1,1}) $$ 变换从此表示为 $$ \mqty(\xmat*{x'}{4}{1}) = \Lambda \mqty(\xmat*{x}{4}{1}) $$ 对矩阵求逆 $$ \Lambda^T = \mqty(\dmat{\gamma&\gamma\beta\\gamma\beta&\gamma,1,1}) $$ 用位矢 $\vb{r}$ 代替直角坐标系，得洛伦兹变换的普适形式 $$ ct' = \gamma(ct - \vb{\beta}\vdot\vb{r})\ \vb{r'} = \vb{r} + [\frac{\gamma^2}{\gamma+1}(\vb{\beta}\vdot\vb{r}) - \gamma ct]\vb{\beta} $$
+相对论的时空结构
+
+事件的间隔有这样的几种可能：
+
+    类光间隔：两个事件可以用光波联系，$s^2 = 0$；
+    类时间隔：两个事件可以用速度为 $u(u<c)$ 的作用联系，$s^2<0$；
+    类空间隔：两个事件超过光波在时间 $t$ 内所能传播的距离，$s^2>0$。
+
+若相互作用的传播速度不大于光速且二事件的间隔类时或类光，则此二事件之间可以存在因果联系。
+
+若二事件的间隔类空，因为相互作用的传播速度不超过光速，间隔类空的二事件之间不可能用任何方式相互联系，它们之间没有因果联系，其发生的先后次序也就失去了绝对性。
+
+从两个相对运动的参考系观察先后发生的两件事，两件事的间隔为类空间隔，那么可能出现两件事发生的顺序不同，然而这没有关系，毕竟没有因果联系。
+
+从某个参考系观察，对于相对静止的体系内发生在一个地点的两件事，事件的固有时间为 $\Delta t$。 从另一个相对原参考系运动的新参考系观察，两件事发生在不同的时间和地点。根据洛伦兹变换，时间间隔为 $$ {\Delta t}' = \gamma[(t_2 - t_1) + \frac{\beta}{c}\vdot(\vb{r_2} - \vb{r_1})] = \gamma \Delta t $$ 这就是相对论的时间延缓效应。
+
+从某个参考系观察，同一时刻读取某个物体的长度，物体的固有长度为 $\Delta x$ 。从另一个相对原参考系运动的新参考系观察，物体某时刻的两端在轴上的刻度差为其长度。根据洛伦兹变换，物体的长度为 $$ \Delta x = \gamma({x_2}' - v t_2) - \gamma({x_1}' - v t_1) = \gamma {\Delta x}' $$
+闵氏空间中的张量
