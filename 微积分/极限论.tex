@@ -1,0 +1,29 @@
+
+\documentclass{ctexart}
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\newtheorem{theorem}{定理}
+\begin{document}
+\section{极限的定理}
+
+\theorem 当变量趋于有限极限，变量的算术运算式趋于有限极限，值为有限极限的同算术运算。
+
+\theorem 当变量趋于有限极限，变量的序列决定极限的序列，极限的序列不决定变量的序列。
+
+对数列极限，有斯托尔茨定理：
+
+\theorem 设整序变量 $y_n \to +\infty$，且从某一项开始 $y_{n+1} > y_n$，存在极限
+$ \lim_{n\to +\infty} \frac{x_{n+1} - x_n}{y_{n+1}-y_n} $，则变量 $\frac{x_n}{y_n}$
+存在极限，且
+$$
+\lim_{n\to +\infty} \frac{x_n}{y_n} = 
+\lim_{n\to +\infty} \frac{x_{n+1} - x_n}{y_{n+1}-y_n}
+$$
+
+数列极限的收敛原理：
+
+\theorem 整序变量 $x_n$ 有有限极限 $\iff$
+$\forall \varepsilon > 0, \exists N \in \mathbb{N} $
+使得当 $n,n' > N$ 时，$\lvert x_{n'} - x_n \rvert < \varepsilon$
+\end{document}
